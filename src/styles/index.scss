@@ -1,0 +1,80 @@
+@import './variables';
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+
+	* {
+		box-sizing: border-box;
+		overflow: visible;
+		float: none;
+		outline: none;
+	}
+
+	p{ 
+		margin:0;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3 {
+		padding: 0;
+		margin: 0;
+		font-weight: 600;
+	}
+}
+
+.main {
+	height: 100%;
+	background-color: $color-light-gray;
+}
+
+.headline {
+	text-align: center;
+	color: $color-white;
+	background-color: $primary-color;
+	padding: 12px 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__applicant {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+
+		&-position {
+			font-weight: 400;
+			font-size: 0.75rem;
+
+			+ .headline__applicant-name {
+				margin-top: 5px;
+			}
+		}
+		&-name {
+			font-weight: 600;
+			font-size: 0.75rem;
+		}
+	}
+}
+
+.challenge {
+	padding: 18px;
+	font-size: 0.9rem;
+}

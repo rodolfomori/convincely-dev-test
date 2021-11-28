@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+.main-div-movie {
+    width: $movieWidth;
+}
+.top-img{ 
+    width: $movieWidth;
+    height: $movieHeight;
+    background: #ABBBCC;
+    border: 1px solid #ABBBCC;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.movie-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $primary-text-color;
+}
+
+.wrapper-movie {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    gap: 8px;
+    padding: 16px;
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $primary-text-color;
+    }
+}   
+
+.movie-div {
+    display: flex;
+    justify-content: space-between;
+}

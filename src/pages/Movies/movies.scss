@@ -1,0 +1,50 @@
+@import '../../styles/index.scss';
+
+.main-div {
+    height: 100%;
+}
+
+.wrapper-div {
+    margin: 100px;
+    margin-top: 20px;
+    border-bottom: 1px solid #D8E1EB;
+    padding-bottom: 32px;
+
+    input {
+        width: 198px;
+        height: 38px;
+
+        background: $color-white;
+
+        border: 1px solid #C5D2E0;
+        border-radius: 2px;
+    }
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: $primary-text-color;
+    margin-bottom: 5px;
+}
+
+.sub-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-top {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.movies-div {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 100px;
+    gap: 20px;
+    justify-items: center;
+}
